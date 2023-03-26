@@ -1,0 +1,20 @@
+.popup__fullscreen-form {
+    box-sizing: border-box;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .popup__fullscreen-form {
+        max-width: 700px;
+        max-height: 540px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .popup__fullscreen-form {
+        max-width: 820px;
+    }
+}

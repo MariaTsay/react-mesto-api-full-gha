@@ -1,0 +1,16 @@
+.places__delete {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url(../../../images/places__iconBin.svg);
+    background-repeat: no-repeat;
+    padding: 0;
+    border: 0;
+    width: 18px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.places__delete:hover {
+    opacity: 0.6;
+}

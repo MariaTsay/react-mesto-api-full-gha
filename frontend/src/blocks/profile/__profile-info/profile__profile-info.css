@@ -1,0 +1,26 @@
+.profile__profile-info {
+    width: 100%;
+    margin-top: 26px;
+    justify-items: center;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .profile__profile-info {
+        padding: 0;
+        margin: 0;
+        margin-right: auto;
+        text-align: start;
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile__profile-info {
+        padding: 0;
+        text-align: start;
+        max-width: 336px;
+    }
+}
+
+

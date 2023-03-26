@@ -1,0 +1,12 @@
+.profile__profile-info-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .profile__profile-info-container {
+        justify-content: flex-start;
+    }
+}

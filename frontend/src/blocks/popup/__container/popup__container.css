@@ -1,0 +1,17 @@
+.popup__container {
+    min-width: 282px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .popup__container {
+        min-width: 433px;
+    }
+}
