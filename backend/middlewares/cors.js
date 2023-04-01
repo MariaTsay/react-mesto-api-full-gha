@@ -2,7 +2,8 @@
 const allowedCors = [
   'https://mymestogram.nomoredomains.work/',
   'http://mymestogram.nomoredomains.work/',
-  'localhost:3000',
+  'https://localhost:3000/',
+  'http://localhost:3000/',
 ];
 
 // eslint-disable-next-line consistent-return
