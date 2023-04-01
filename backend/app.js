@@ -9,7 +9,7 @@ const app = express();
 
 const { PORT = 3000 } = process.env;
 mongoose
-  .connect('mongodb://localhost:27017/mestodb')
+  .connect('mongodb://127.0.0.1:27017/mestodb')
   .then(() => {
     console.log('connect');
   })
@@ -30,7 +30,7 @@ app.use(errors());
 app.use((err, req, res, next) => {
   // если у ошибки нет статуса, выставляем 500
   const { statusCode = 500, message } = err;
-
+  console.log(err);
   res
     .status(statusCode)
     .send({
