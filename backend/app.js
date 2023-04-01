@@ -1,9 +1,12 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 
 const router = require('./routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const cors = require('./middlewares/cors');
 
 const app = express();
 
@@ -20,6 +23,7 @@ mongoose
 app.use(express.json());
 
 app.use(requestLogger); // подключаем логгер запросов
+app.use(cors);
 
 app.use('/', router);
 
