@@ -5,9 +5,6 @@
 * добавление и удаление постов (карточек)
 * лайки/дизлайки
 
-
-  
-
 ## Технологии
 ### Frontend
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -24,14 +21,12 @@
 ![MongoDB](https://img.shields.io/badge/-MongoDB-090909?style=for-the-badge&logo=MongoDB)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
-
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://github.com/MariaTsay/react-mesto-api-full-gha
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.60.222
 
-Frontend https://...
+Frontend https://mymestogram.nomoredomains.work/
 
-Backend https://...
+Backend https://api.mymestogram.nomoredomains.work/
