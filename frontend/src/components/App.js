@@ -184,7 +184,8 @@ function App() {
   const getCards = async () => {
     try {
       const apiCards = await api.getInitialCards();
-      setCards(apiCards);
+      //console.log(apiCards.data);
+      setCards(apiCards.data);
     } catch (err) {
       console.log(err)
     }
