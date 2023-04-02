@@ -1,4 +1,4 @@
-const BASE_URL = 'https://auth.nomoreparties.co';
+const BASE_URL = 'https://api.mymestogram.nomoredomains.work';
 
 const handleResponse = (res) => {
     if (res.ok) {

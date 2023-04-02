@@ -7,6 +7,7 @@ const { errors } = require('celebrate');
 const router = require('./routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const cors = require('./middlewares/cors');
+const serverError = require('./middlewares/serverError');
 
 const app = express();
 
@@ -31,20 +32,7 @@ app.use(errorLogger); // подключаем логгер ошибок
 
 app.use(errors());
 
-app.use((err, req, res, next) => {
-  // если у ошибки нет статуса, выставляем 500
-  const { statusCode = 500, message } = err;
-  console.log(err);
-  res
-    .status(statusCode)
-    .send({
-      // проверяем статус и выставляем сообщение в зависимости от него
-      message: statusCode === 500
-        ? 'На сервере произошла ошибка'
-        : message,
-    });
-  next();
-});
+app.use(serverError);
 
 app.listen(PORT, () => {
   // Если всё работает, консоль покажет, какой порт приложение слушает
