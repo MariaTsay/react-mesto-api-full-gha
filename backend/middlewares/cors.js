@@ -1,9 +1,9 @@
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCors = [
-  'https://mymestogram.nomoredomains.work/',
-  'http://mymestogram.nomoredomains.work/',
-  'https://localhost:3000/',
-  'http://localhost:3000/',
+  'https://mymestogram.nomoredomains.work',
+  'http://mymestogram.nomoredomains.work',
+  'https://localhost:3000',
+  'http://localhost:3000',
 ];
 
 // eslint-disable-next-line consistent-return
