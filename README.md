@@ -25,7 +25,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.60.222
+Публичный IP-адрес: 158.160.60.222
 
 Frontend https://mymestogram.nomoredomains.work/
 
