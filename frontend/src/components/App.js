@@ -67,7 +67,7 @@ function App() {
       checkAuth(jwt)
         .then((data) => {
           setIsLoggedIn(true);
-          setUserEmail(data.data.email);
+          setUserEmail(data.email);
           navigate("/");
         })
         .catch((err) => console.log(err));
@@ -102,7 +102,8 @@ function App() {
   //лайки-дизлайки
   const handleCardLike = async (card) => {
     // Снова проверяем, есть ли уже лайк на этой карточке
-    const isLiked = card.likes.some(i => i._id === currentUser._id);
+    const isLiked = card.likes.some((id) => id === currentUser._id);
+    //console.log(card.likes);
     // Отправляем запрос в API и получаем обновлённые данные карточки
     if (isLiked) {
       api.dislikeCard(card._id, isLiked).then((newCard) => {
