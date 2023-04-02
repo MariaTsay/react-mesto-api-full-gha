@@ -12,10 +12,10 @@ function Header(props) {
         alt="лого Место"
       />
       <Routes>
-        <Route path="signin" element={<Link to="/signup" className="header__nav">Регистрация</Link>} />
-        <Route path="signup" element={<Link to="/signin" className="header__nav">Войти</Link>} />
+        <Route path="sign-in" element={<Link to="/sign-up" className="header__nav">Регистрация</Link>} />
+        <Route path="sign-up" element={<Link to="/sign-in" className="header__nav">Войти</Link>} />
         <Route path="/" element={
-        <><p className="header__email">{userEmail}</p><Link to="signin" className="header__nav" onClick={onSignOut}>Выйти</Link></>} />
+        <><p className="header__email">{userEmail}</p><Link to="sign-in" className="header__nav" onClick={onSignOut}>Выйти</Link></>} />
       </Routes>
 
     </header>
