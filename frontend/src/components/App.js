@@ -193,9 +193,11 @@ function App() {
   }
 
   useEffect(() => {
-    getCurrentUserInfo();
-    getCards();
-  }, [])
+    if(isLoggedIn) {
+      getCurrentUserInfo();
+      getCards();
+    }
+  }, [isLoggedIn])
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
